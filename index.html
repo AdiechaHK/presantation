@@ -25,43 +25,11 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-				<section data-markdown>
-					<textarea data-template>
-						## Page title
-
-						A paragraph with some text and a [link](http://hakim.se).
-<pre><code class="hljs">
-import React, { useState } from 'react';
- 
-function Example() {
-  const [count, setCount] = useState(0);
- 
-  return (
-    <div class="fragment">
-      <p>You clicked {count} times</p>
-      <button onClick={() => setCount(count + 1)}>
-        Click me
-      </button>
-    </div>
-  );
-}
-</code></pre>
-					</textarea>
-				</section>
-									
-				<section>
-					<p class="fragment grow">grow</p>
-					<p class="fragment shrink">shrink</p>
-					<p class="fragment fade-out">fade-out</p>
-					<p class="fragment fade-up">fade-up (also down, left and right!)</p>
-					<p class="fragment fade-in-then-out">fades in, then out when we move to the next step</p>
-					<p class="fragment fade-in-then-semi-out">fades in, then obfuscate when we move to the next step</p>
-					<p class="fragment highlight-current-blue">blue only once</p>
-					<p class="fragment highlight-red">highlight-red</p>
-					<p class="fragment highlight-green">highlight-green</p>
-					<p class="fragment highlight-blue">highlight-blue</p>
+				<section data-markdown="example.md"
+					data-separator="^\n\n\n"
+					data-separator-vertical="^\n\n"
+					data-separator-notes="^Note:"
+					data-charset="iso-8859-15">
 				</section>
 			</div>
 		</div>
